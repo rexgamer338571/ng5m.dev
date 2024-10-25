@@ -10,26 +10,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     font-family: 'Iosevka Web';
 }
 
 body, html {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
     width: 100vw;
     height: 100vh;
     background-color: var(--bgcolor);
     color: var(--text);
-
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .navbar {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-right: 20px;
 }
 
 .mode_button {
@@ -42,7 +43,6 @@ body, html {
     text-align: center;
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
     border: none;
-
     transition: 0.3s;
 }
 
@@ -55,8 +55,20 @@ body, html {
     background-color: var(--bglight);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 10em;
+    margin-inline: 2em;
 }
 
 .themable {
     transition: 0.5s;
+}
+
+.invis-a {
+    text-decoration: none;
+    color: var(--text);
 }
