@@ -28,7 +28,7 @@ function juggleHeaderText() {
 
         if (headerIndex > headerTargetText.length) {
             clearInterval(interval);
-            headerElem.textContent = headerTargetText + "_";
+            headerElem.textContent = headerTargetText;
         }
     }, 300);
 }
