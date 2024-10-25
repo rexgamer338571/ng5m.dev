@@ -1,3 +1,13 @@
+@font-face {
+	font-family: 'Iosevka Web';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('https://iosevka-webfonts.github.io/iosevka/woff2/iosevka-regular.woff2') format('woff2'), url('ttf/iosevka-regular.ttf') format('truetype');
+}
+
+
 :root {
     --bgcolor: #121113;
     --bglight: #312F2F;
