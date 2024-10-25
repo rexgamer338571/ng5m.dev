@@ -1,0 +1,56 @@
+:root {
+    --bgcolor: #121113;
+    --bglight: #312F2F;
+    --text: #F7F7F2;
+
+    --hover: #413333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Iosevka Web';
+}
+
+body, html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bgcolor);
+    color: var(--text);
+}
+
+.navbar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.mode_button {
+    background-color: var(--bglight);
+    border-radius: 8px;
+    height: 40px;
+    width: 40px;
+    color: var(--text);
+    font-size: 30px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    border: none;
+
+    transition: 0.3s;
+}
+
+.mode_button:hover {
+    background-color: var(--hover);
+}
+
+.container {
+    padding: 20px;
+    background-color: var(--bglight);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
