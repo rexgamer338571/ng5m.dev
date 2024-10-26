@@ -19,6 +19,19 @@ const lightMode = {
 
 let isLightMode = false;
 
+const vantaNet = VANTA.NET({
+    el: "#net",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: darkMode["text"],
+    backgroundColor: darkMode["bgcolor"]
+});
+
 let headerIndex = 0;
 function juggleHeaderText() {
     const interval = setInterval(function() {
@@ -47,22 +60,11 @@ function switchMode() {
 `--bglight: ${dict["bglight"]};\n` +
 `--text: ${dict["text"]};\n` +
 `--hover: ${dict["hover"]};\n`;
-}
 
-function makeNet() {
-    VANTA.NET({
-        el: "#net",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        scale: 1.00,
-        scaleMobile: 1.00,
-        color: darkMode["text"],
-        backgroundColor: darkMode["bgcolor"]
+    vantaNet.setOptions({
+        color: dict["text"],
+        backgroundColor: dict["bgcolor"]
     });
 }
 
-makeNet();
 juggleHeaderText();
