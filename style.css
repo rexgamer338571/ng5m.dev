@@ -35,12 +35,24 @@ body, html {
     transition: 0.3s;
 }
 
+#net {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+
 .navbar {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
     /* margin-right: 20px; */
+
+    position: relative;
+    z-index: 1;
 }
 
 .navbar > * {
@@ -58,6 +70,9 @@ body, html {
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
     border: none;
     transition: 0.3s;
+
+    position: relative;
+    z-index: 2;
 }
 
 .mode_button:hover {
@@ -79,6 +94,9 @@ body, html {
     justify-content: center;
 
     width: 10em;
+
+    position: relative;
+    z-index: 1;
 }
 
 .themable {
