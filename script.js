@@ -20,6 +20,7 @@ const lightMode = {
 let isLightMode = false;
 
 const vantaNet = VANTA.NET({
+    backgroundAlpha: 0,
     el: "#net",
     mouseControls: true,
     touchControls: true,
